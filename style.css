@@ -100,3 +100,16 @@ h1 {
     margin: 10px;
     border-radius: 20%;
 }
+
+#spinPikachu {
+    align-self: flex-end;
+    width: 100px;
+}
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.spin-animation {
+    animation: spin 1s ease-in-out; /* Adjust duration and timing function as needed */
+}

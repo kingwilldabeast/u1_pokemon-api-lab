@@ -31,7 +31,12 @@ button.addEventListener('click', async ()=> {
     value2.innerText = response.data.moves[1].move.name
     // value3.innerText = response.data.abilities[0].ability.name
 
-
+    spinPikachu.classList.add('spin-animation');
+    
+    // Remove the class after the animation ends (optional)
+    setTimeout(() => {
+      spinPikachu.classList.remove('spin-animation');
+    }, 1000); // Adjust the duration of the animation
 })
 
 infoButton.addEventListener('click',openTab)
